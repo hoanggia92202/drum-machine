@@ -1,6 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-//const isDevelopment = process.env.NODE_ENV === 'development'
 
 module.exports = {
     entry: './src/index.js',
@@ -9,7 +8,6 @@ module.exports = {
       filename: 'bundle.js'
     },
     mode: 'development',
-  
     serve: {
         content: path.resolve(__dirname, "dist")
       },
@@ -18,20 +16,15 @@ module.exports = {
           {
             test: /\.module\.s(a|c)ss$/,
             use: [
-                  //isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                   MiniCssExtractPlugin.loader,
                 {
                   loader: 'css-loader',
                   options: {
                       modules: true,
-                      //sourceMap: isDevelopment
                   }
                 }, 
                 {
                     loader: 'sass-loader',
-                    options: {
-                      //sourceMap: isDevelopment
-                    }
                 }
             ]
           },
@@ -39,14 +32,10 @@ module.exports = {
             test: /\.s(a|c)ss$/,
             exclude: /\.module\.(s(a|c)ss)$/,
             use: [
-                  //isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                   MiniCssExtractPlugin.loader,
                   'css-loader', 
                 {
                     loader: 'sass-loader',
-                    options: {
-                      //sourceMap: isDevelopment
-                    }
                 }
             ]
           },
