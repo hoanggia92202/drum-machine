@@ -8,7 +8,7 @@ This App is a drum machine. It allowed the user to play the drum using the keybo
 
 # Screenshots
 
-Screen Shot 2022-09-12 at 4.15.56 PM.png
+<img width="1511" alt="Screen Shot 2022-09-12 at 4 15 56 PM" src="https://user-images.githubusercontent.com/100818662/189751883-5ae3100f-9030-4d94-a308-ec3bcde2588b.png">
 
 # Built with
 
