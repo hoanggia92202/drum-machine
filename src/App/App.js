@@ -9,6 +9,53 @@ const App = () => {
     const [soundTrack, setSoundTrack] = useState("");
     const [bank, setBank] = useState("Heater Kit");
 
+    const setPower = () => {
+        //* power off *//
+        if(powerStatus){
+            setPowerStatus(false);
+            setVolume(50);
+            setSoundTrackStatus(false);
+            
+            document.getElementById('volumeControl').value = "50";
+            document.getElementById('volumeControl').style.backgroundColor ="rgb(180, 178, 178)"
+            document.getElementById('q').style.backgroundColor = "";
+            document.getElementById('w').style.backgroundColor = "";
+            document.getElementById('e').style.backgroundColor = "";
+            document.getElementById('a').style.backgroundColor = "";
+            document.getElementById('s').style.backgroundColor = "";
+            document.getElementById('d').style.backgroundColor = "";
+            document.getElementById('z').style.backgroundColor = "";
+            document.getElementById('x').style.backgroundColor = "";
+            document.getElementById('c').style.backgroundColor = "";
+            document.getElementById('powerButton').style.backgroundColor = "";
+            document.getElementById('bankButton').style.backgroundColor = "";
+            document.getElementById('bankName').style.opacity = "0";
+            document.getElementById('bankButton').disabled=true;
+            document.getElementById('screen').style.zIndex = "10";
+            document.getElementById('volumeSreen').style.zIndex = "10";
+        }
+        //* power on *//
+        else{
+            setPowerStatus(true);
+            document.getElementById('q').style.backgroundColor = "#4CAF50";
+            document.getElementById('w').style.backgroundColor = "#4CAF50";
+            document.getElementById('e').style.backgroundColor = "#4CAF50";
+            document.getElementById('a').style.backgroundColor = "#4CAF50";
+            document.getElementById('s').style.backgroundColor = "#4CAF50";
+            document.getElementById('d').style.backgroundColor = "#4CAF50";
+            document.getElementById('z').style.backgroundColor = "#4CAF50";
+            document.getElementById('x').style.backgroundColor = "#4CAF50";
+            document.getElementById('c').style.backgroundColor = "#4CAF50";
+            document.getElementById('powerButton').style.backgroundColor = "red";
+            document.getElementById('bankButton').style.backgroundColor = "rgb(50, 184, 72)";
+            document.getElementById('bankButton').disabled=false;
+            document.getElementById('bankName').style.opacity = "1";
+            document.getElementById('screen').style.zIndex = "-1";
+            document.getElementById('volumeSreen').style.zIndex = "-10";
+            document.getElementById('volumeControl').style.backgroundColor ="red";
+        }
+    };
+
     let powerDiv;
     let volumeOrSoundtrack;
 
