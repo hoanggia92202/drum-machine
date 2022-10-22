@@ -56,6 +56,15 @@ const App = () => {
         }
     };
 
+    const switchBank = () => {
+        if(bank === "Heater Kit"){
+            setBank("Smooth Piano Kit");
+        }
+        else{
+            setBank("Heater Kit");
+        }
+    };
+
     let powerDiv;
     let volumeOrSoundtrack;
 
