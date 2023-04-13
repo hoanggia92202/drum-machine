@@ -1,2 +1,39 @@
 .App {
+  min-height: 100vh;
+  background-color: rgb(122, 119, 119);
+}
+
+.container {
+  height: 30%;
+  width: 22rem;
+}
+
+.leftControl {
+  background-color: rgb(109, 211, 180);
+}
+
+.keyRow {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  height: 25%;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 5px;
+  position: relative;
+  background-color: gray;
+  border: thick solid #d4e766;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
 }
