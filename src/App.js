@@ -40,18 +40,20 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className='col-sm-5 bg-info'>
-          <div>
-            <div></div>
-            <div id='display'></div>
-            <div>
-              <div id='volumeSreen'></div>
-              <input id='volumeControl' type='range' min='1' max='100' />
+        <div className='rightControl col-sm-5 bg-info'>
+          <div className='switchPad'>
+            <div className='powerContainer'></div>
+            <div id='display' className='lcd'></div>
+            <div className='volumeContainer'>
+              <div id='volumeSreen' className='volumeSreen'></div>
+              <input id='volumeControl' className='slider_off' type='range' min='1' max='100' />
             </div>
-            <div>
-              <button id='bankButton'>Bank</button>
+            <div className='powerContainer'>
+              <button id='bankButton' className='bankButton'>
+                Bank
+              </button>
             </div>
-            <div id='bankName'></div>
+            <div id='bankName' className='bankName'></div>
           </div>
         </div>
       </div>
