@@ -4,9 +4,9 @@ const App = () => {
   return (
     <div id='drum-machine' className='App d-flex container-fluid'>
       <div className='container row w-75 m-auto'>
-        <div className='leftControl col-sm-7'>
+        <div className='left-control col-sm-7'>
           <div id='screen' className='screen'></div>
-          <div className='keyRow mt-4 ml-auto mr-auto'>
+          <div className='key-row mt-4 ml-auto mr-auto'>
             <div id='q' className='keys drum-pad'>
               <audio id='Q'></audio>Q
             </div>
@@ -17,7 +17,7 @@ const App = () => {
               <audio id='E'></audio>E
             </div>
           </div>
-          <div className='keyRow mt-2 ml-auto mr-auto'>
+          <div className='key-row mt-2 ml-auto mr-auto'>
             <div id='a' className='keys'>
               <audio id='A'></audio>A
             </div>
@@ -28,7 +28,7 @@ const App = () => {
               <audio id='D'></audio>D
             </div>
           </div>
-          <div className='keyRow mt-2 ml-auto mr-auto'>
+          <div className='key-row mt-2 ml-auto mr-auto'>
             <div id='z' className='keys'>
               <audio id='Z'></audio>Z
             </div>
@@ -40,20 +40,20 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className='rightControl col-sm-5 bg-info'>
-          <div className='switchPad'>
-            <div className='powerContainer'></div>
+        <div className='right-control col-sm-5 bg-info'>
+          <div className='switch-pad'>
+            <div className='power-container'></div>
             <div id='display' className='lcd'></div>
-            <div className='volumeContainer'>
-              <div id='volumeSreen' className='volumeSreen'></div>
-              <input id='volumeControl' className='slider_off' type='range' min='1' max='100' />
+            <div className='volume-container'>
+              <div id='volume-screen' className='volume-screen'></div>
+              <input id='volume-control' className='slider-off' type='range' min='1' max='100' />
             </div>
-            <div className='powerContainer'>
-              <button id='bankButton' className='bankButton'>
+            <div className='power-container'>
+              <button id='bank-button' className='bank-button'>
                 Bank
               </button>
             </div>
-            <div id='bankName' className='bankName'></div>
+            <div id='bank-name' className='bank-name'></div>
           </div>
         </div>
       </div>

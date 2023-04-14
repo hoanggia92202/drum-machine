@@ -8,11 +8,11 @@
   width: 22rem;
 }
 
-.leftControl {
+.left-control {
   background-color: rgb(109, 211, 180);
 }
 
-.keyRow {
+.key-row {
   display: flex;
   justify-content: space-around;
   width: 85%;
@@ -38,19 +38,19 @@
   user-select: none;
 }
 
-.rightControl {
+.right-control {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 576px) {
-  .rightControl {
+  .right-control {
     height: 18rem;
   }
 }
 
-.switchPad {
+.switch-pad {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -60,14 +60,14 @@
   background-color: cyan;
 }
 
-.powerContainer {
+.power-container {
   display: flex;
   flex-direction: column;
   width: 27%;
   height: 2.5rem;
 }
 
-.powerButton {
+.power-button {
   background-color: gray;
   width: 100%;
   padding-left: 5px;
@@ -83,7 +83,7 @@ button:focus {
   outline: none;
 }
 
-.bankButton {
+.bank-button {
   position: relative;
   width: 100%;
   padding-left: 5px;
@@ -107,13 +107,13 @@ button:focus {
   background-color: rgb(68, 71, 68);
 }
 
-.volumeContainer {
+.volume-container {
   position: relative;
   width: 80%;
   text-align: center;
 }
 
-.volumeSreen {
+.volume-screen {
   position: absolute;
   display: block;
   width: 100%;
@@ -122,14 +122,14 @@ button:focus {
   z-index: 10;
 }
 
-.slider_off {
+.slider-off {
   -webkit-appearance: none;
   height: 8px;
   background: rgb(180, 178, 178);
   border-radius: 25px;
 }
 
-.slider_off::-webkit-slider-thumb {
+.slider-off::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 15px;
   height: 15px;
@@ -139,7 +139,7 @@ button:focus {
   cursor: pointer;
 }
 
-.bankName {
+.bank-name {
   margin-top: -1rem;
   font-weight: bold;
   width: 100%;
