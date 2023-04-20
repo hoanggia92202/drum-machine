@@ -10,11 +10,9 @@
   flex-direction: column;
   justify-content: space-around;
   height: 70vh;
-  background-color: #232808;
 }
 
 /* left-control */
-
 .left-control {
   display: flex;
   flex-direction: column;
@@ -51,7 +49,6 @@
 }
 
 /* right-control */
-
 .right-control {
   display: flex;
   justify-content: center;
