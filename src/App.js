@@ -5,7 +5,7 @@ const App = () => {
     <div id='drum-machine' className='App'>
       <div className='container'>
         <div className='left-control'>
-          <div className='key-row mt-4 ml-auto mr-auto'>
+          <div className='key-row'>
             <div id='q' className='keys'>
               <audio id='Q'></audio>Q
             </div>
@@ -16,7 +16,7 @@ const App = () => {
               <audio id='E'></audio>E
             </div>
           </div>
-          <div className='key-row mt-2 ml-auto mr-auto'>
+          <div className='key-row'>
             <div id='a' className='keys'>
               <audio id='A'></audio>A
             </div>
@@ -27,7 +27,7 @@ const App = () => {
               <audio id='D'></audio>D
             </div>
           </div>
-          <div className='key-row mt-2 ml-auto mr-auto'>
+          <div className='key-row'>
             <div id='z' className='keys'>
               <audio id='Z'></audio>Z
             </div>
