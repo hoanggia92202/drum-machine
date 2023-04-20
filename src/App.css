@@ -16,6 +16,11 @@
 /* left-control */
 
 .left-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
   background-color: rgb(109, 211, 180);
 }
 
