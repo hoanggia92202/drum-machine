@@ -1,11 +1,11 @@
 .App {
+  display: flex;
+  align-items: center;
   min-height: 100vh;
   background-color: rgb(122, 119, 119);
 }
 
 .container {
-  height: 30%;
-  width: 22rem;
 }
 
 .left-control {

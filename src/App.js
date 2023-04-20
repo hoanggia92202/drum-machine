@@ -2,9 +2,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div id='drum-machine' className='App d-flex container-fluid'>
-      <div className='container row w-75 m-auto'>
-        <div className='left-control col-sm-7'>
+    <div id='drum-machine' className='App'>
+      <div className='container'>
+        <div className='left-control'>
           <div id='screen' className='screen'></div>
           <div className='key-row mt-4 ml-auto mr-auto'>
             <div id='q' className='keys drum-pad'>
@@ -40,7 +40,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className='right-control col-sm-5 bg-info'>
+        <div className='right-control'>
           <div className='switch-pad'>
             <div className='power-container'></div>
             <div id='display' className='lcd'></div>
