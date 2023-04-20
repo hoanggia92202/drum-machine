@@ -6,7 +6,10 @@
 }
 
 .container {
+  background-color: #232808;
 }
+
+/* left-control */
 
 .left-control {
   background-color: rgb(109, 211, 180);
@@ -38,16 +41,12 @@
   user-select: none;
 }
 
+/* right-control */
+
 .right-control {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 576px) {
-  .right-control {
-    height: 18rem;
-  }
 }
 
 .switch-pad {
