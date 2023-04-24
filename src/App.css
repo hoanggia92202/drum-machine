@@ -1,15 +1,7 @@
 .App {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  background-color: rgb(122, 119, 119);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 70vh;
 }
 
 /* left-control */
@@ -20,7 +12,7 @@
   justify-content: space-around;
   align-items: center;
   height: 60%;
-  width: 100%;
+
   background-color: rgb(109, 211, 180);
 }
 
@@ -56,8 +48,14 @@
   justify-content: center;
   align-items: center;
   height: 40%;
-  width: 100%;
+
   background-color: rgb(109, 211, 180);
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
 .switch-pad {
@@ -137,16 +135,10 @@ button:focus {
 }
 
 .bank-button {
-  position: relative;
   width: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
   background-color: gray;
-  border-radius: 8%;
   text-align: center;
   font-weight: bold;
-  cursor: pointer;
-  user-select: none;
 }
 
 .bank-name {
