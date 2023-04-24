@@ -3,6 +3,7 @@ import './App.css';
 const App = () => {
   return (
     <div className='container'>
+      <div className='padding'></div>
       <div className='left-control'>
         <div className='key-row'>
           <div id='q' className='keys'>

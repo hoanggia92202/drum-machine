@@ -1,19 +1,24 @@
-.App {
+.container {
 }
 
-.container {
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'padding left-control left-control left-control right-control right-control right-control';
+    background-color: aquamarine;
+  }
 }
 
 /* left-control */
 .left-control {
+  grid-area: left-control;
   display: flex;
   flex-direction: column;
-  margin: auto;
   justify-content: space-around;
   align-items: center;
-  height: 60%;
-
-  background-color: rgb(109, 211, 180);
+  background-color: rgb(109, 126, 211);
 }
 
 .key-row {
@@ -44,18 +49,11 @@
 
 /* right-control */
 .right-control {
+  grid-area: right-control;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40%;
-
-  background-color: rgb(109, 211, 180);
-}
-
-@media (min-width: 800px) {
-  .container {
-    flex-direction: row;
-  }
+  background-color: rgb(174, 211, 109);
 }
 
 .switch-pad {
