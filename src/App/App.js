@@ -1,5 +1,6 @@
 import KeyRow from '../KeyRow/KeyRow';
 import Button from '../Button/Button';
+import Lcd from '../Lcd/Lcd';
 
 const App = () => {
   return (
@@ -15,17 +16,9 @@ const App = () => {
         <div id='right-control' className='col-md-3 p-4 d-flex justify-content-center border rounded-white'>
           <div id='switch-pad' className='w-75 d-flex flex-column align-items-center'>
             <Button name={'ON/OFF'} color={'danger'} />
-            <div
-              className='w-100 p-2 mb-3 border rounded text-white text-center bg-success'
-              style={{ fontWeight: 'bolder' }}>
-              CHIMNEY
-            </div>
-            <input id='volumeControl' type='range' min='1' max='100' defaultValue={50} />
-            <div
-              className='w-100 p-2 mt-3 mb-3 border rounded text-white text-center bg-success'
-              style={{ fontWeight: 'bolder' }}>
-              BANK 1
-            </div>
+            <Lcd display={'Chimney'} />
+            <input id='volumeControl' className='mb-3' type='range' min='1' max='100' defaultValue={50} />
+            <Lcd display={'BANK 1'} />
             <Button name={'BANK'} color={'warning'} />
           </div>
         </div>
