@@ -40,20 +40,29 @@ const App = () => {
           </div>
         </div>
 
-        <div id='right-control' className='col-md-3 bg-secondary'>
-          <div id='switch-pad'>
-            <div id='power-container'></div>
-            <div id='display' className=''></div>
-            <div id='volume-container'>
-              <div id='volume-screen'></div>
-              <input id='volume-control' type='range' min='1' max='100' />
+        <div id='right-control' className='col-md-3 d-flex justify-content-center bg-secondary'>
+          <div id='switch-pad' className='w-75 pt-5 d-flex flex-column align-items-center'>
+            <button
+              type='button'
+              className='w-50 mb-3 btn btn-sm border rounded btn-danger'
+              style={{ fontWeight: 'bolder' }}>
+              ON/OFF
+            </button>
+            <div
+              className='w-100 mb-3 p-2 border rounded text-white text-center bg-success'
+              style={{ fontWeight: 'bolder' }}>
+              CHIMNEY
             </div>
-            <div id='power-container'>
-              <button id='bank-button' className=''>
-                Bank
-              </button>
+            <input id='volumeControl' className='mb-2' type='range' min='1' max='100' defaultValue={50} />
+            <div className='w-100 mb-3 p-2 border rounded text-white text-center bg-info' style={{ fontWeight: 'bolder' }}>
+              BANK 1
             </div>
-            <div id='bank-name' className=''></div>
+            <button
+              type='button'
+              className='w-50 mb-3 btn btn-sm border rounded btn-success'
+              style={{ fontWeight: 'bolder' }}>
+              BANK
+            </button>
           </div>
         </div>
       </div>
