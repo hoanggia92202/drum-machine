@@ -2,9 +2,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className='App container-fluid bg-black' style={{ paddingTop: '7rem' }}>
-      <div className='row d-flex justify-content-center' style={{ minHeight: '300px', maxWidth: '1300px' }}>
-        <div id='left-control' className='col-md-5 d-flex flex-column justify-content-around border rounded-white'>
+    <div className='container-fluid bg-black' style={{ minHeight: '100vh', width: '100%', paddingTop: '7rem' }}>
+      <div className='row d-flex justify-content-center' style={{ minHeight: '300px', maxWidth: '1300px', margin: 'auto' }}>
+        <div id='left-control' className='col-md-5 p-4 d-flex flex-column justify-content-around border rounded-white'>
           <div id='key-row' className='row mt-2 d-flex justify-content-around'>
             <div id='q' className='col-3 h1 p-3 border rounded border-white text-center bg-info'>
               <audio id='Q'></audio>Q
@@ -40,7 +40,7 @@ const App = () => {
           </div>
         </div>
 
-        <div id='right-control' className='col-md-3 d-flex justify-content-center border rounded-white'>
+        <div id='right-control' className='col-md-3 p-4 d-flex justify-content-center border rounded-white'>
           <div id='switch-pad' className='w-75 d-flex flex-column align-items-center'>
             <button
               type='button'
@@ -59,7 +59,7 @@ const App = () => {
               style={{ fontWeight: 'bolder' }}>
               BANK 1
             </div>
-            <button type='button' className='btn btn-sm border rounded btn-light' style={{ fontWeight: 'bolder' }}>
+            <button type='button' className='btn btn-sm mb-3 border rounded btn-light' style={{ fontWeight: 'bolder' }}>
               BANK
             </button>
           </div>
