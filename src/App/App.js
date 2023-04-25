@@ -13,7 +13,7 @@ const App = () => {
           <KeyRow keys={['A', 'S', 'D']} />
           <KeyRow keys={['Z', 'X', 'C']} />
         </div>
-        <div id='right-control' className='col-md-3 p-4 d-flex justify-content-center border rounded-white'>
+        <div id='right-control' className='col-md-3 pt-5 d-flex justify-content-center border rounded-white'>
           <div id='switch-pad' className='w-75 d-flex flex-column align-items-center'>
             <Button name={'ON/OFF'} color={'danger'} />
             <Lcd display={'Chimney'} />
