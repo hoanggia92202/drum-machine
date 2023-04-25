@@ -2,9 +2,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className='container-fluid vh-100 bg-info' style={{ paddingTop: '7rem' }}>
+    <div className='container-fluid vh-100 bg-secondary' style={{ paddingTop: '7rem' }}>
       <div className='row d-flex justify-content-center' style={{ height: '300px' }}>
-        <div id='left-control' className='col-md-5 d-flex flex-column justify-content-around bg-secondary'>
+        <div id='left-control' className='col-md-5 d-flex flex-column justify-content-around border rounded-white'>
           <div id='key-row' className='row d-flex justify-content-around'>
             <div id='q' className='col-3 h1 border rounded text-center border-white p-3'>
               <audio id='Q'></audio>Q
@@ -40,7 +40,7 @@ const App = () => {
           </div>
         </div>
 
-        <div id='right-control' className='col-md-3 d-flex justify-content-center bg-secondary'>
+        <div id='right-control' className='col-md-3 d-flex justify-content-center border rounded-white'>
           <div id='switch-pad' className='w-75 pt-5 d-flex flex-column align-items-center'>
             <button
               type='button'
