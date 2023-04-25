@@ -3,7 +3,7 @@ import './App.css';
 const App = () => {
   return (
     <div className='App container-fluid bg-black' style={{ paddingTop: '7rem' }}>
-      <div className='row d-flex justify-content-center' style={{ minHeight: '300px' }}>
+      <div className='row d-flex justify-content-center' style={{ minHeight: '300px', maxWidth: '1300px' }}>
         <div id='left-control' className='col-md-5 d-flex flex-column justify-content-around border rounded-white'>
           <div id='key-row' className='row mt-2 d-flex justify-content-around'>
             <div id='q' className='col-3 h1 p-3 border rounded border-white text-center bg-info'>
